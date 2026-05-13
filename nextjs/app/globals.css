@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-sans: 'Geist', sans-serif;
+}
+
+* {
+    font-family: 'Geist', sans-serif;
+}
+
+body {
+    @apply bg-white text-gray-900 text-sm antialiased;
+}
+
+.btn {
+    @apply cursor-pointer bg-gradient-to-r from-indigo-600 to-[#8A7DFF];
+}
+
+@keyframes drift {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(30px, -25px) rotate(6deg); }
+}
+@keyframes drift-slow {
+    0%, 100% { transform: translate(0, 0) rotate(-3deg); }
+    50% { transform: translate(-30px, 20px) rotate(4deg); }
+}
+@keyframes float-bob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-18px); }
+}
+@keyframes sway {
+    0%, 100% { transform: translateX(0) rotate(-2deg); }
+    50% { transform: translateX(25px) rotate(8deg); }
+}
+@keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes orbit {
+    0%   { transform: translate(0, 0); }
+    25%  { transform: translate(40px, -30px); }
+    50%  { transform: translate(60px, 20px); }
+    75%  { transform: translate(20px, 50px); }
+    100% { transform: translate(0, 0); }
+}
+@keyframes wander {
+    0%   { transform: translate(0, 0) rotate(0deg); }
+    25%  { transform: translate(-35px, 25px) rotate(-5deg); }
+    50%  { transform: translate(-15px, -40px) rotate(4deg); }
+    75%  { transform: translate(30px, -20px) rotate(7deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+@keyframes meander {
+    0%   { transform: translate(0, 0); }
+    33%  { transform: translate(50px, 30px); }
+    66%  { transform: translate(-20px, 40px); }
+    100% { transform: translate(0, 0); }
+}
+@keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes ad-drift-r {
+    0%   { transform: translate3d(-30vw, 0, 0); }
+    100% { transform: translate3d(130vw, 0, 0); }
+}
+@keyframes ad-drift-l {
+    0%   { transform: translate3d(130vw, 0, 0); }
+    100% { transform: translate3d(-30vw, 0, 0); }
+}
+@keyframes ad-bob {
+    0%, 100% { translate: 0 0; }
+    50%      { translate: 0 -14px; }
+}
+@keyframes ad-spin {
+    0%, 100% { rotate: var(--rot-base, 0deg); }
+    50%      { rotate: calc(var(--rot-base, 0deg) + var(--rot-amp, 3deg)); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .ad-drift, .ad-bob-spin {
+        animation: none !important;
+    }
+}
