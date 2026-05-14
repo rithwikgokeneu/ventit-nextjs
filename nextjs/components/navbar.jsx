@@ -29,6 +29,7 @@ export default function Navbar() {
             ],
         },
         { name: 'Stories', href: '/stories' },
+        { name: 'For Publishers', href: '/for-publishers' },
         { name: 'Pricing', href: '/pricing' },
         { name: 'Docs', href: '/docs' },
         { name: 'About', href: '/about' },
