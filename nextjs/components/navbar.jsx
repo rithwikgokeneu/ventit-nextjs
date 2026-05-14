@@ -44,8 +44,13 @@ export default function Navbar() {
                     }`}
                 >
                     <Link href='/' className='flex items-center'>
-                        <span className={`font-semibold tracking-tight text-gray-900 transition-all duration-300 ${scrolled ? 'text-xl' : 'text-2xl'}`}>
-                            Ventit
+                        <span
+                            style={{ fontFamily: 'var(--font-cursive), cursive' }}
+                            className={`bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text font-bold tracking-tight text-transparent transition-all duration-300 ${
+                                scrolled ? 'text-3xl' : 'text-4xl'
+                            }`}
+                        >
+                            Vententit
                         </span>
                     </Link>
 
