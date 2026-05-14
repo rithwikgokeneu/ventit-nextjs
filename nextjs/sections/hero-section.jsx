@@ -2,7 +2,7 @@ import { ArrowRightIcon } from "lucide-react";
 
 export default function HeroSection() {
     return (
-        <section className="flex flex-col items-center justify-center relative h-svh overflow-hidden">
+        <section className="flex flex-col items-center justify-center relative min-h-[78svh] pt-10 pb-4 overflow-hidden">
             <svg className="absolute inset-0 -z-10" width="1440" height="1018" viewBox="0 0 1440 1018" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#a)">
                     <ellipse cx="271.282" cy="200.379" rx="271.282" ry="200.379" fill="#FBFFE1" />

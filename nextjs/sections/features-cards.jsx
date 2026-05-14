@@ -26,7 +26,7 @@ export default function FeaturesCards() {
     ];
 
     return (
-        <section className="relative mb-20 py-8 px-6">
+        <section className="relative mb-20 pt-2 pb-8 px-6">
             <SectionTitle
                 title="Built for the AI stack, designed for performance marketing."
                 subtitle="Three core capabilities that turn AI conversations into a measurable, monetizable channel."
