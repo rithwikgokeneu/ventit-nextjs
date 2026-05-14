@@ -1,35 +1,35 @@
 'use client';
-import { Sparkles, BarChart3, Zap } from "lucide-react";
+import { Sparkles, BarChart3, ShieldCheck } from "lucide-react";
 import SectionTitle from "@/components/section-title";
 import { GradientCard } from "@/components/ui/gradient-card";
 
 export default function FeaturesCards() {
     const cards = [
         {
-            title: "AI-Powered Inbox Sorting",
+            title: "Context Engine",
             description:
-                "OpenMail revolutionizes email management with AI-driven sorting, boosting productivity and accessibility.",
+                "Submit your brand facts once. Our RAG pipeline retrieves and injects them into LLM responses with sub-50ms latency — only when user intent matches. No prompt engineering, no model fine-tuning.",
             icon: Sparkles,
         },
         {
-            title: "Real-time Analytics",
+            title: "Multi-Touch Attribution",
             description:
-                "Track performance, conversions, and audience insights as they happen with a beautifully unified dashboard.",
+                "Track every impression, click, and conversion across ChatGPT, Claude, and 1,000+ AI apps. First-touch, last-touch, linear, time-decay — see exactly which AI conversation drove the sale.",
             icon: BarChart3,
         },
         {
-            title: "Smart Automation Workflows",
+            title: "Hallucination Guard",
             description:
-                "Automate repetitive tasks across tools with prebuilt flows that adapt to your team's exact way of working.",
-            icon: Zap,
+                "Every AI mention of your brand is validated for factual accuracy and sentiment before it reaches users. Auto-pause on misrepresentation. Your brand, your facts, your rules.",
+            icon: ShieldCheck,
         },
     ];
 
     return (
         <section className="relative mb-20 py-8 px-6">
             <SectionTitle
-                title="Built for builders, made for scale"
-                subtitle="Three flagship capabilities that turn an idea into a live product without slowing you down."
+                title="Built for the AI stack, designed for performance marketing."
+                subtitle="Three core capabilities that turn AI conversations into a measurable, monetizable channel."
             />
 
             <div className="mt-16 flex flex-wrap items-center justify-center gap-8">

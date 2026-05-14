@@ -1,22 +1,6 @@
 import { ArrowRightIcon } from "lucide-react";
 
 export default function HeroSection() {
-    const logos = [
-        { type: 'img', src: '/companies-logo/instagram.svg', alt: 'Instagram' },
-        { type: 'img', src: '/companies-logo/framer.svg', alt: 'Framer' },
-        { type: 'img', src: '/companies-logo/microsoft.svg', alt: 'Microsoft' },
-        { type: 'img', src: '/companies-logo/huawei.svg', alt: 'Huawei' },
-        { type: 'img', src: '/companies-logo/walmart.svg', alt: 'Walmart' },
-        { type: 'text', name: 'Google', className: 'font-medium text-2xl tracking-tight' },
-        { type: 'text', name: 'amazon', className: 'font-bold text-2xl tracking-tight lowercase' },
-        { type: 'text', name: 'Netflix', className: 'font-bold text-xl tracking-widest uppercase' },
-        { type: 'text', name: 'Spotify', className: 'font-bold text-2xl tracking-tight' },
-        { type: 'text', name: 'Slack', className: 'font-bold text-2xl italic tracking-tight' },
-        { type: 'text', name: 'Adobe', className: 'font-bold text-2xl tracking-tight' },
-        { type: 'text', name: 'Shopify', className: 'font-semibold text-2xl tracking-tight' },
-        { type: 'text', name: 'Stripe', className: 'font-bold text-2xl italic tracking-tight' },
-    ];
-
     return (
         <section className="flex flex-col items-center justify-center relative h-svh overflow-hidden">
             <svg className="absolute inset-0 -z-10" width="1440" height="1018" viewBox="0 0 1440 1018" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -181,46 +165,30 @@ export default function HeroSection() {
             </div>
 
             <h1
-                className="text-4xl md:text-6xl/18 text-center font-semibold max-w-2xl mt-5 bg-gradient-to-r from-black to-[#748298] text-transparent bg-clip-text">
-                Build, Launch & Scale with{" "}
-                <span className="bg-gradient-to-b from-indigo-300 to-indigo-600 bg-clip-text text-transparent">PrebuiltUI</span>.
+                className="text-4xl md:text-6xl/18 text-center font-semibold max-w-3xl mt-5 bg-gradient-to-r from-black to-[#748298] text-transparent bg-clip-text">
+                Advertising for the{" "}
+                <span className="bg-gradient-to-b from-indigo-300 to-indigo-600 bg-clip-text text-transparent">AI era</span>.
             </h1>
-            <p className="text-slate-600 md:text-base max-md:px-2 text-center max-w-lg mt-3">
-                A high-performance, serverless Postgres database that helps you ship fast and scale without limits.
+            <p className="text-slate-600 md:text-base max-md:px-2 text-center max-w-2xl mt-4">
+                Vententit injects brand-verified facts into LLM responses at inference time — with attribution that actually works. Reach customers inside ChatGPT, Claude, and every AI app, with proof of every conversion.
             </p>
 
-            <button
-                className="flex items-center gap-2 btn hover:opacity-90 text-white px-8 py-3 mt-8 rounded-full transition">
-                <span>get started for free</span>
-                <ArrowRightIcon className='size-5' />
-            </button>
-
-            <p className="py-6 text-slate-600 mt-14">Trusting by leading brands, including —</p>
-
-            <div
-                className="group relative w-full max-w-5xl mx-auto py-4 overflow-hidden"
-                style={{
-                    maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
-                    WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
-                }}
-            >
-                <div
-                    className="flex w-max gap-14 group-hover:[animation-play-state:paused]"
-                    style={{
-                        animation: 'marquee 35s linear infinite',
-                    }}
-                >
-                    {[...logos, ...logos].map((logo, index) => (
-                        <div key={index} className="flex shrink-0 items-center justify-center h-7 text-slate-500/80">
-                            {logo.type === 'img' ? (
-                                <img src={logo.src} alt={logo.alt} className="h-7 w-auto max-w-xs" />
-                            ) : (
-                                <span className={logo.className}>{logo.name}</span>
-                            )}
-                        </div>
-                    ))}
-                </div>
+            <div className="flex flex-col sm:flex-row items-center gap-3 mt-8">
+                <button
+                    className="flex items-center gap-2 btn hover:opacity-90 text-white px-8 py-3 rounded-full transition">
+                    <span>Get started for free</span>
+                    <ArrowRightIcon className='size-5' />
+                </button>
+                <button
+                    className="flex items-center gap-2 border border-slate-300 hover:border-slate-400 bg-white/60 backdrop-blur text-slate-800 px-8 py-3 rounded-full transition">
+                    <span>Book a demo</span>
+                </button>
             </div>
+
+            <p className="py-6 text-slate-600 mt-14 text-sm text-center px-4">
+                Currently in private beta with 12 launch partners.{" "}
+                <a href="#" className="font-medium text-indigo-600 hover:text-indigo-700 transition">Request access →</a>
+            </p>
         </section >
     );
 }

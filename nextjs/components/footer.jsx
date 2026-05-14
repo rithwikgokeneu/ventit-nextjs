@@ -3,13 +3,16 @@ export default function Footer() {
         <footer className="bg-white w-full text-slate-900 mt-20 pt-12 lg:pt-16 px-4 sm:px-8 md:px-16 lg:px-28 overflow-hidden border-t border-slate-200">
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-6 gap-8 md:gap-12">
                 <div className="lg:col-span-3 space-y-6">
-                    <a href="https://prebuiltui.com" className="block">
-                        <svg width="157" height="40" viewBox="0 0 157 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="m8.75 11.3 6.75 3.884 6.75-3.885M8.75 34.58v-7.755L2 22.939m27 0-6.75 3.885v7.754M2.405 15.408 15.5 22.954l13.095-7.546M15.5 38V22.939M29 28.915V16.962a2.98 2.98 0 0 0-1.5-2.585L17 8.4a3.01 3.01 0 0 0-3 0L3.5 14.377A3 3 0 0 0 2 16.962v11.953A2.98 2.98 0 0 0 3.5 31.5L14 37.477a3.01 3.01 0 0 0 3 0L27.5 31.5a3 3 0 0 0 1.5-2.585" stroke="#0f172a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
+                    <a href="/" className="block">
+                        <span
+                            style={{ fontFamily: 'var(--font-cursive), cursive' }}
+                            className="text-4xl font-bold tracking-tight bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent"
+                        >
+                            Vententit
+                        </span>
                     </a>
                     <p className="text-sm/6 text-slate-600 max-w-96">
-                        PrebuiltUI helps you build faster by transforming your design vision into fully functional, production-ready UI components.
+                        Vententit is the advertising layer for AI applications. We help brands reach customers inside LLM conversations — with attribution that proves every dollar.
                     </p>
                     <div className="flex gap-5 md:gap-6 order-1 md:order-2">
                         <a href="#" className="text-slate-700 hover:text-indigo-600 transition">
@@ -50,20 +53,22 @@ export default function Footer() {
                     <div>
                         <h3 className="font-medium text-sm mb-4 text-slate-900">Products</h3>
                         <ul className="space-y-3 text-sm text-slate-600">
-                            <li><a href="#" className="hover:text-indigo-600 transition">Components</a></li>
-                            <li><a href="#" className="hover:text-indigo-600 transition">Templates</a></li>
-                            <li><a href="#" className="hover:text-indigo-600 transition">Icons</a></li>
+                            <li><a href="#" className="hover:text-indigo-600 transition">Context Engine</a></li>
+                            <li><a href="#" className="hover:text-indigo-600 transition">Attribution Suite</a></li>
+                            <li><a href="#" className="hover:text-indigo-600 transition">Hallucination Guard</a></li>
+                            <li><a href="#" className="hover:text-indigo-600 transition">Publisher Network</a></li>
+                            <li><a href="#" className="hover:text-indigo-600 transition">SDK & API</a></li>
                         </ul>
                     </div>
 
                     <div>
                         <h3 className="font-medium text-sm mb-4 text-slate-900">Resources</h3>
                         <ul className="space-y-3 text-sm text-slate-600">
-                            <li><a href="#" className="hover:text-indigo-600 transition">PrebuiltUI</a></li>
-                            <li><a href="#" className="hover:text-indigo-600 transition">Templates</a></li>
-                            <li><a href="#" className="hover:text-indigo-600 transition">Components</a></li>
-                            <li><a href="#" className="hover:text-indigo-600 transition">Blogs</a></li>
-                            <li><a href="#" className="hover:text-indigo-600 transition">Store</a></li>
+                            <li><a href="#" className="hover:text-indigo-600 transition">Documentation</a></li>
+                            <li><a href="#" className="hover:text-indigo-600 transition">API Reference</a></li>
+                            <li><a href="#" className="hover:text-indigo-600 transition">Integration Guides</a></li>
+                            <li><a href="#" className="hover:text-indigo-600 transition">Attribution Playbook</a></li>
+                            <li><a href="#" className="hover:text-indigo-600 transition">Changelog</a></li>
                         </ul>
                     </div>
 
@@ -71,12 +76,12 @@ export default function Footer() {
                         <h3 className="font-medium text-sm mb-4 text-slate-900">Company</h3>
                         <ul className="space-y-3 text-sm text-slate-600">
                             <li><a href="#" className="hover:text-indigo-600 transition">About</a></li>
-                            <li><a href="#" className="hover:text-indigo-600 transition">Vision</a></li>
+                            <li><a href="#" className="hover:text-indigo-600 transition">Stories</a></li>
                             <li className="flex items-center gap-2">
                                 <a href="#" className="hover:text-indigo-600 transition">Careers</a>
                                 <span className="text-[11px] px-2 py-0.5 rounded-full bg-green-50 border border-green-300 text-green-700">HIRING</span>
                             </li>
-                            <li><a href="#" className="hover:text-indigo-600 transition">Privacy policy</a></li>
+                            <li><a href="#" className="hover:text-indigo-600 transition">Privacy Policy</a></li>
                             <li><a href="#" className="hover:text-indigo-600 transition">Contact Us</a></li>
                         </ul>
                     </div>
@@ -84,13 +89,15 @@ export default function Footer() {
             </div>
 
             <div className="max-w-7xl mx-auto mt-12 pt-4 border-t border-slate-200 flex justify-between items-center">
-                <p className="text-slate-500 text-sm">© 2025 PrebuiltUI Design</p>
-                <p className="text-sm text-slate-500">All right reserved.</p>
+                <p className="text-slate-500 text-sm">© 2026 Vententit. All rights reserved.</p>
             </div>
             <div className="relative">
                 <div className="absolute inset-x-0 bottom-0 mx-auto w-full max-w-3xl h-full max-h-64 bg-indigo-300 rounded-full blur-[170px] opacity-50 pointer-events-none" />
-                <h1 className="text-center font-extrabold leading-[0.7] text-transparent text-[clamp(3rem,15vw,15rem)] [-webkit-text-stroke:1px_#C7D2FE] mt-6">
-                    PrebuiltUI
+                <h1
+                    style={{ fontFamily: 'var(--font-cursive), cursive' }}
+                    className="text-center font-bold leading-[0.7] text-transparent text-[clamp(3rem,15vw,15rem)] [-webkit-text-stroke:1px_#C7D2FE] mt-6"
+                >
+                    Vententit
                 </h1>
             </div>
         </footer>
