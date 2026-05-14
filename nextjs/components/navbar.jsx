@@ -1,6 +1,6 @@
 'use client';
 
-import { MenuIcon, XIcon, ChevronDown, FileTextIcon, ImageUpIcon, FileVideo, AudioLines, LightbulbIcon } from 'lucide-react';
+import { MenuIcon, XIcon, ChevronDown, Sparkles, BarChart3, ShieldCheck, Globe, Code2 } from 'lucide-react';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
@@ -21,16 +21,19 @@ export default function Navbar() {
         {
             name: 'Products',
             subLinks: [
-                { name: 'Text to Slides', href: '#products/text-to-slides', icon: FileTextIcon, description: 'Convert text to slides' },
-                { name: 'Image to Slides', href: '#products/image-to-slides', icon: ImageUpIcon, description: 'Convert images to slides' },
-                { name: 'Video to Slides', href: '#products/video-to-slides', icon: FileVideo, description: 'Convert videos to slides' },
-                { name: 'Audio to Slides', href: '#products/audio-to-slides', icon: AudioLines, description: 'Convert audio to slides' },
-                { name: 'Ideas to Slides', href: '#products/ideas-to-slides', icon: LightbulbIcon, description: 'Generate slides from ideas' },
+                { name: 'Context Engine', href: '/products/context-engine', icon: Sparkles, description: 'Inject brand facts into LLMs' },
+                { name: 'Attribution Suite', href: '/products/attribution-suite', icon: BarChart3, description: 'Multi-touch AI attribution' },
+                { name: 'Hallucination Guard', href: '/products/hallucination-guard', icon: ShieldCheck, description: 'Validate every brand mention' },
+                { name: 'Publisher Network', href: '/products/publisher-network', icon: Globe, description: 'Earn revenue from AI citations' },
+                { name: 'SDK & API', href: '/products/sdk-api', icon: Code2, description: 'Two-line integration' },
             ],
         },
-        { name: 'Stories', href: '#stories' },
-        { name: 'Pricing', href: '#pricing' },
-        { name: 'Docs', href: '#docs' },
+        { name: 'Stories', href: '/stories' },
+        { name: 'Pricing', href: '/pricing' },
+        { name: 'Docs', href: '/docs' },
+        { name: 'About', href: '/about' },
+        { name: 'Careers', href: '/careers' },
+        { name: 'Contact', href: '/contact' },
     ];
 
     return (

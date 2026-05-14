@@ -1,4 +1,6 @@
+'use client';
 import { ArrowRightIcon } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function HeroSection() {
     return (
@@ -164,31 +166,51 @@ export default function HeroSection() {
                 </div>
             </div>
 
-            <h1
+            <motion.h1
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                 className="text-4xl md:text-6xl/18 text-center font-semibold max-w-3xl mt-5 bg-gradient-to-r from-black to-[#748298] text-transparent bg-clip-text">
                 Advertising for the{" "}
                 <span className="bg-gradient-to-b from-indigo-300 to-indigo-600 bg-clip-text text-transparent">AI era</span>.
-            </h1>
-            <p className="text-slate-600 md:text-base max-md:px-2 text-center max-w-2xl mt-4">
+            </motion.h1>
+            <motion.p
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+                className="text-slate-600 md:text-base max-md:px-2 text-center max-w-2xl mt-4">
                 Vententit injects brand-verified facts into LLM responses at inference time — with attribution that actually works. Reach customers inside ChatGPT, Claude, and every AI app, with proof of every conversion.
-            </p>
+            </motion.p>
 
-            <div className="flex flex-col sm:flex-row items-center gap-3 mt-8">
-                <button
+            <motion.div
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+                className="flex flex-col sm:flex-row items-center gap-3 mt-8"
+            >
+                <motion.button
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 0.97 }}
                     className="flex items-center gap-2 btn hover:opacity-90 text-white px-8 py-3 rounded-full transition">
                     <span>Get started for free</span>
                     <ArrowRightIcon className='size-5' />
-                </button>
-                <button
+                </motion.button>
+                <motion.button
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 0.97 }}
                     className="flex items-center gap-2 border border-slate-300 hover:border-slate-400 bg-white/60 backdrop-blur text-slate-800 px-8 py-3 rounded-full transition">
                     <span>Book a demo</span>
-                </button>
-            </div>
+                </motion.button>
+            </motion.div>
 
-            <p className="py-6 text-slate-600 mt-14 text-sm text-center px-4">
+            <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 0.6 }}
+                className="py-6 text-slate-600 mt-14 text-sm text-center px-4">
                 Currently in private beta with 12 launch partners.{" "}
                 <a href="#" className="font-medium text-indigo-600 hover:text-indigo-700 transition">Request access →</a>
-            </p>
+            </motion.p>
         </section >
     );
 }
